@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <button id="toggle-mode">
+      <i class='bx bxs-moon bx-lg' ></i>
+      <i class='bx bx-sun bx-lg'></i>
+  </button>
+  <div class="container">
+    <i class='bx bxs-contact bx-lg'></i>
+    <h1>Contact Manager</h1>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <button type="submit" id="saveButton">Save Contact</button>
+    </form>
+
+    <div id="contactList">
+      <h2>Contacts</h2>
+      <ul id="contacts"></ul>
+    </div>
+  </div>
+  <script src="theme.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
